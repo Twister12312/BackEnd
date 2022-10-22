@@ -4,8 +4,10 @@ import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="leave")
 public class Leave {
 	@Id
     private long Employee_Id;
@@ -15,9 +17,6 @@ public class Leave {
 	private String FromDate;
     private String Description;
 	
-	public Leave() 
-	  { 
-	  } 
 	
 	public long getEmployee_Id() {
 		return Employee_Id;

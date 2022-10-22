@@ -1,11 +1,11 @@
 package com.Payroll;
 
 import org.springframework.boot.SpringApplication;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class EmployeePayrollManagementBackendApplication extends SpringBootServletInitializer{
+public class EmployeePayrollManagementBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeePayrollManagementBackendApplication.class, args);

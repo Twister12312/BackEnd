@@ -5,7 +5,9 @@ import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 @Entity
+@Table(name="workschedule")
 public class WorkSchedule {
 	@Id
     private long Employee_Id;

@@ -2,8 +2,10 @@ package com.Payroll.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="salary")
 public class Salary {
 	@Id
 	private long Employee_Id;

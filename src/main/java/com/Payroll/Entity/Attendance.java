@@ -3,8 +3,10 @@ package com.Payroll.Entity;
 import javax.persistence.Entity;
 import java.sql.Date;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="attendance")
 public class Attendance {
 	@Id
 	private long Employee_Id;
