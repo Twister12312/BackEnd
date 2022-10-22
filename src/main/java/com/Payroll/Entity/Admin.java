@@ -9,11 +9,11 @@ import javax.persistence.Id;
 import java.sql.Date;
 
 @Entity
-public class Employee {
+public class Admin {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long Employee_Id;
+	private long Admin_Id;
 	private String Name;
 	private Date DOB;
 	private int Mobileno;
@@ -22,10 +22,10 @@ public class Employee {
 	private String Email_Id;
 	private String Home_Address;
 
-	public Employee(long employee_Id, String name, Date dOB, int mobileno, String designation, String gender,
+	public Admin(long admin_Id, String name, Date dOB, int mobileno, String designation, String gender,
 			String email_Id, String home_Address) {
 		super();
-		Employee_Id = employee_Id;
+		Admin_Id = admin_Id;
 		Name = name;
 		DOB = dOB;
 		Mobileno = mobileno;
@@ -35,11 +35,11 @@ public class Employee {
 		Home_Address = home_Address;
 	}
 	
-	public long getEmployee_Id() {
-		return Employee_Id;
+	public long getAdmin_Id() {
+		return Admin_Id;
 	}
-	public void setEmployee_Id(long employee_Id) {
-		Employee_Id = employee_Id;
+	public void setAdmin_Id(long admin_Id) {
+		Admin_Id = admin_Id;
 	}
 	public String getName() {
 		return Name;
@@ -86,3 +86,4 @@ public class Employee {
 	
 	
 }
+
